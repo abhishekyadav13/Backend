@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            margin: 10px;
+            padding: 10px;
+        }
+        .two{
+            margin: 10px;
+        }
+        .Registration{
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+        .register{
+            margin-left: 70px;
+        }
+        
+    </style>
+</head>
+<body>
+
+     <div class="Registration">
+      <button>Registration</button>    
+    </div>
+
+    
+    <form action="/register" method="POST">
+   
+    <div class="one">
+          <div class="two">
+         <input type="text" class="firstname" placeholder="first Name" name="firstname" value="">
+    </div>
+    <div class="two">
+        <input type="text" class="lastname" placeholder="last Name" name="lastname" value="">
+    </div>
+    <div class="two">
+        <input type="text" minlength="10" maxlength="10" class="phone"
+         placeholder="Phone" name="phone" value="">
+    </div>
+    <div class="two">
+        <input type="text" class="age" placeholder="Age" name="age" value="">
+    </div>
+    <div class="two">
+        <input type="email" class="email" placeholder="Enter email" name="email" value="">
+    </div>
+    <div class="two">
+         <input type="password" class="password" placeholder="Password" name="password" value="">
+    </div>
+    <div class="two">
+       <input type="password" class="confirmPassword" placeholder="Confirm Password" name="confirmPassword" value=""> 
+    </div>
+      
+    </div>
+  
+     <input type="submit" class="btnRegister" value="Register" />
+    {{!-- <button class="register">Register</button> --}}
+   </form>
+     
+</body>
+</html>
+
